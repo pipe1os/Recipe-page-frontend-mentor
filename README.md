@@ -26,8 +26,6 @@ Building a webpage that replicates the provided design, using semantic HTML and 
 
 - Live Site URL: [https://pipe1os.github.io/Recipe-page-frontend-mentor](https://pipe1os.github.io/Recipe-page-frontend-mentor/)
 
-_Remember to replace the placeholder URLs above with your actual links._
-
 ## My process
 
 I started by structuring the content semantically using HTML, based on the provided design. Then, I gradually applied CSS styles, first setting up custom fonts, color variables, and base styles. After that, I focused on the overall layout using Flexbox and designed the main recipe card. Step by step, I styled each section (preparation time, ingredients, instructions, and nutrition) by following the style guide and using the design image as my main reference. Finally, I added personal touches like gradients and shadows to enhance the visual appearance.
