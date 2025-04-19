@@ -24,7 +24,7 @@ Building a webpage that replicates the provided design, using semantic HTML and 
 
 ### Live Site
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://pipe1os.github.io/Recipe-page-frontend-mentor](https://pipe1os.github.io/Recipe-page-frontend-mentor/))
 
 _Remember to replace the placeholder URLs above with your actual links._
 
