@@ -1,0 +1,237 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+    --color-nutmeg: hsl(14, 45%, 36%);
+    --color-dark-raspberry: hsl(332, 51%, 32%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-rose-white: hsl(330, 100%, 98%);
+    --color-eggshell: hsl(30, 54%, 90%);
+    --color-light-grey: hsl(30, 18%, 87%);
+    --color-wenge-brown: hsl(30, 10%, 34%);
+    --color-dark-charcoal: hsl(24, 5%, 18%);
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Young Serif';
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+/* Body */
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-image: linear-gradient(to bottom, var(--color-eggshell), var(--color-rose-white));
+    color: var(--color-wenge-brown);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+
+/* Recipe Card */
+.recipe-card {
+    background-color: var(--color-white);
+    box-shadow: 0 8px 32px 0 rgba(100, 100, 100, 0.15);
+    background-color: rgba(255, 255, 255, 0.6);
+    max-width: 740px;
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden; 
+    margin-bottom: 40px; 
+    padding: 40px;
+}
+
+.recipe-image {
+    display: block;
+    width: 100%;
+    height: auto; 
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+}
+
+h1 {
+    color: var(--color-dark-charcoal);
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+    line-height: 1.1;
+}
+
+h2 {
+    color: var(--color-nutmeg);
+    font-size: 1.75rem;
+    margin-bottom: 24px;
+}
+
+h3 {
+    color: var(--color-dark-raspberry);
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+}
+
+p.description {
+    margin-bottom: 32px;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+/* Preparation Time */
+.preparation-time {
+    background-color: var(--color-rose-white);
+    padding: 28px;
+    border-radius: 12px;
+    margin-bottom: 32px;
+}
+
+.preparation-time ul {
+    list-style: none; 
+    padding-left: 24px;
+}
+
+.preparation-time li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.preparation-time li::before {
+    content: "\2022";
+    color: var(--color-dark-raspberry);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1.3em;
+    position: absolute;
+    left: 0.3em;
+    top: 0;
+}
+
+.preparation-time li strong {
+    font-weight: 600;
+}
+
+
+ul,
+ol {
+    padding-left: 24px; 
+}
+
+li {
+    padding-left: 20px; 
+    margin-bottom: 8px; 
+    position: relative;
+}
+
+li::marker {
+    color: var(--color-nutmeg);
+    font-weight: bold;
+}
+
+.ingredients-list {
+    list-style-type: square; 
+}
+
+.instructions-list li::marker {
+    font-family: 'Outfit', sans-serif; 
+}
+
+li strong {
+    font-weight: 600; 
+    color: var(--color-wenge-brown); 
+}
+
+
+hr {
+    border: none;
+    border-top: 1px solid var(--color-light-grey);
+    margin: 32px 0;
+}
+
+
+/* Nutrition Table */
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+}
+
+.nutrition-table td {
+    padding: 12px 0 12px 32px; 
+    border-bottom: 1px solid var(--color-light-grey);
+}
+
+.nutrition-table tr:last-child td {
+    border-bottom: none;
+}
+
+.nutrition-table td:last-child {
+    font-weight: 700;
+    color: var(--color-nutmeg);
+    text-align: left; 
+}
+
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--color-dark-charcoal);
+    margin-top: 20px; 
+}
+
+.attribution a {
+    color: var(--color-nutmeg);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+    .recipe-card {
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+    .recipe-content {
+        padding: 32px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
